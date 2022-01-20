@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site de la Guilde</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+<!-- Debut Barre de navigation Responsive -->
+        <div class="bg_nav">
+            <header>
+                <a href="#" class="logo">L'aube D'or</a>
+                <div class="menu-toggle"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#accueil" class="active">Accueil</a></li>
+                        <li><a href="#quete">Tableau des quête</a></li>
+                        <li><a href="#article">Article</a></li>
+                        <li><a href="#contact">Nous rejoindre</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </header>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')$('nav').toggleClass('active')
+                }
+                )
+            }
+        </script>
+<!-- Fin Barre de navigation Responsive -->
+<!-- Hero de la page pour la version Ecran Bureau -->
+        <div class="section">
+            <h1>Découvrez la nouvelle maison de guilde</h1>
+            <p>
+                La bataille contre la guilde des Crimson Lion à étais remporté malgré la perte de notre maison.
+                <br>
+                Sa reconstuction est maintenant terminé et les reservations de la soirée d'inauguration commence !
+            </p>
+            <a href="#">Réservez sa place</a>
+            <video class="video-bg" autoplay loop muted>
+                <source src="herovideo.mp4" type="video/mp4"></video>
+            </div>
+<!-- Fin Hero de la page pour la version Ecran Bureau -->
+<!-- Hero de la page pour la version mobile/tablette -->
+            <div class="heromob">
+                <h1>Découvrez la nouvelle<br>maison de guilde</h1>
+                <p>
+                    La bataille contre la guilde des Crimson Lion à étais remporté malgré la perte de notre maison.Sa reconstuction est maintenant terminé et les reservations de la soirée d'inauguration commence !
+                </p>
+                <a href="#">Réservez sa place</a>
+            </div>
+<!-- Fin Hero de la page pour la version mobille/tablette -->
+<!-- Debut Section Recrutement/Quête -->
+            <section class="section1">
+                <section class="box1">
+                    <div class="section1img">
+                        <img src="box1.png">
+                    </div>
+                    <div>
+                        <h2>REJOIGNEZ L'AUBE D'OR !</h2>
+                        <h1>Commencez votre aventure !</h1>
+                        <p>
+                            Entamez votre périple au seins de notre guilde !
+                        </p>
+                    </div>
+                </section>
+                <section class="box2">
+                    <div class="section1img">
+                        <img src="box2.png">
+                    </div>
+                    <div>
+                        <h2>BESOIN D'UNE MISSION ?</h2>
+                        <h1>Toutes les nouvelles quêtes disponibles</h1>
+                        <p>
+                            Prenez du grade et de l'expérience en améliorant la renommé de votre guilde !
+                        </p>
+                    </div>
+                </section>
+            </section>
+<!-- Fin section recrutement/quête -->
+<!-- Articles -->
+            <div id="article" class="art_header">
+                <h1>Nos derniers Articles</h1>
+            </div>
+            <div class="band">
+                <div class="item-1">
+                    <a href="#" class="card">
+                        <div class="thumb">
+                            <video class="vid-art" autoplay loop muted>
+                                <source src="article1.mp4" type="video/mp4"></video>
+                            </div>
+                            <article>
+                                <h1>Important : La princesse Sadaku à disparue</h1>
+                                <p>
+                                    Touts les groupes de Rang S doivent partir à sa recherches !
+                                    <br>
+                                     Demandez plus d'informations à votre chef de section. 
+                                </p>
+                                <span>Mary Winkler</span>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="item-2">
+                        <a href="#" class="card">
+                            <div class="thumb">
+                                <video class="vid-art" autoplay loop muted>
+                                    <source src="article2.mp4" type="video/mp4"></video>
+                                </div>
+                                <article>
+                                    <h1>Interview : Devenir un Rang SS en moins de 3 mois ??</h1>
+                                    <p>
+                                        Au programme : Technique et méthodes décrites par le Cyber Samourai. 
+                                    </p>
+                                    <span>Harry Brignull</span>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item-3">
+                            <a href="#" class="card">
+                                <div class="thumb" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/013/040/066/large/greg-rutkowski-enhanced-surveillance-1500.jpg?1537792711);"></div>
+                                <article>
+                                    <h1>Enquête : Les rues de Ravnica sont-ils moin sur ?</h1>
+                                    <p>
+                                        Découvrez notre quête face à ce nouveau fléaux des rues
+                                    </p>
+                                    <span>Melody Nieves</span>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+<!-- Fin Article -->
+<!-- Debut Quete -->
+                    <div id="quete" class="art_header">
+                        <h1>Tableaux de quêtes :</h1>
+                    </div>
+                    <div class="band">
+                        <div class="item-4">
+                            <a href="#" class="card">
+                                <div class="thumb" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/019/374/109/large/anna-podedworna-mtg-templatevamp.jpg?1563209278);"></div>
+                                <article>
+                                    <h1>Quête : Anna la Vampire.</h1>
+                                    <p>
+                                        Une vampire inférieur terrorise la ville de Blanket.
+                                        <br>
+                                        Demandez plus d'informations à votre chef de section.
+                                    </p>
+                                    <span>La ville de Blanket</span>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item-5">
+                            <a href="#" class="card">
+                                <div class="thumb" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/010/009/614/large/greg-rutkowski-growing-rites-of-itlimoc-1200.jpg?1522077473);"></div>
+                                <article>
+                                    <h1>Quête : Enquete sur le culte de groot.</h1>
+                                    <p>
+                                        Vous devriez nous informer sur leurs raisons et leurs dieux.
+                                        <br>
+                                        Demandez plus d'informations à votre chef de section.
+                                    </p>
+                                    <span>Les plaines de Skaar</span>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item-6">
+                            <a href="#" class="card">
+                                <div class="thumb" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/021/196/034/large/greg-rutkowski-urza-lord-high-artificer-1500-2.jpg?1570735489);"></div>
+                                <article>
+                                    <h1>Quête : Capturer Urza le sage.</h1>
+                                    <p>
+                                        Urza a déjà monter son armée d'androide, arretez le avant qu'il arrive à Ravnica.
+                                        <br>
+                                        Demandez plus d'informations à votre chef de section.
+                                    </p>
+                                    <span>Trouvez le</span>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item-7">
+                            <a href="#" class="card">
+                                <div class="thumb" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/018/179/184/large/greg-rutkowski-karakter-design-studio-1800-key-plantage.jpg?1558550087);"></div>
+                                <article>
+                                    <h1>Quête : Escorte du marchand Marza.</h1>
+                                    <p>
+                                        Escorte du marchand jusqu'à sa destination finale.
+                                        <br>
+                                        Demandez plus d'informations à votre chef de section.
+                                    </p>
+                                    <span>Port de Maedra</span>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+<!-- Fin Quete -->
+<!-- Footer -->
+                    <footer id="contact" class="footer-distributed">
+                        <div class="footer-left">
+                            <h3>L'aube D'or</h3>
+                            <p class="footer-links">
+                                <a href="#accueil" class="active">Accueil</a>
+                                
+                                <a href="#quete">Tableau des quête</a>
+                                
+                                <a href="#article">Article</a>
+                                
+                                <a href="#contact">Nous rejoindre</a>
+                                
+                                <a href="#contact">Contact</a>
+                            </p>
+                            <p class="footer-company-name">
+                                L'aube D'or. 2020
+                            </p>
+                        </div>
+                        <div class="footer-right">
+                            <p>
+                                Nous contactez
+                            </p>
+                            <form action="#" method="post">
+                                <input type="text" name="email" placeholder="Email">
+                                <textarea name="message" placeholder="Message"></textarea>
+                                <button>Envoyer</button>
+                            </form>
+                        </div>
+                    </footer>
+<!-- Fin Footer -->
+                </body>
